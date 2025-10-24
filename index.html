@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula de HTML e CSS - FEIG</title>
+  <title>📘 Aula Completa de CSS: Do Inline ao Externo</title>
   <style>
     :root {
       --primary: #0078ff;
       --secondary: #00bfa5;
-      --bg: #f5f7fa;
+      --bg: #f8fafc;
       --text: #333;
       --card-bg: #fff;
-      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     * {
@@ -28,7 +28,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      min-height: 100vh;
       padding: 40px 20px;
     }
 
@@ -39,14 +38,53 @@
     }
 
     header h1 {
-      font-size: 2.2rem;
       color: var(--primary);
+      font-size: 2.3rem;
+      margin-bottom: 10px;
     }
 
     header p {
-      margin-top: 10px;
+      color: #555;
       font-size: 1.1rem;
-      color: #666;
+    }
+
+    .details {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 10px;
+      padding: 20px 25px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .index {
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      padding: 25px;
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .index h2 {
+      text-align: center;
+      color: var(--secondary);
+      margin-bottom: 15px;
+    }
+
+    ol {
+      padding-left: 20px;
+      line-height: 1.7;
     }
 
     .cards {
@@ -118,32 +156,50 @@
 </head>
 <body>
   <header>
-    <h1>Curso de HTML e CSS - Aula Prática</h1>
-    <p>Explore abaixo os exemplos criados em aula e veja a diferença entre páginas com e sem estilização.</p>
+    <h1>📘 Aula Completa de CSS: Do Inline ao Externo</h1>
+    <p>Compreendendo o uso de CSS Inline, Interno e Externo, além de Classes e IDs.</p>
   </header>
+
+  <div class="details">
+    <p><strong>🎯 Objetivo:</strong> Ensinar os alunos a migrar do CSS inline para o interno e externo, com boas práticas e exemplos práticos.</p>
+    <p><strong>⏱️ Duração:</strong> 90 minutos</p>
+    <p><strong>📚 Nível:</strong> Intermediário</p>
+  </div>
+
+  <section class="index">
+    <h2>📋 Tópicos da Aula</h2>
+    <ol>
+      <li>Introdução ao CSS Inline</li>
+      <li>CSS Interno: uso da tag <code>&lt;style&gt;</code></li>
+      <li>Classes e IDs: diferenças, boas práticas e exemplos</li>
+      <li>CSS Externo: separando estrutura e estilo</li>
+      <li>Revisão Final: comparação e melhores práticas</li>
+      <li>Exemplos práticos: Barbearia e Cafeteria</li>
+    </ol>
+  </section>
 
   <section class="cards">
     <div class="card">
       <h2>💈 Barbearia</h2>
-      <p>Veja como o CSS transforma a aparência da barbearia.</p>
+      <p>Veja como o CSS transforma o visual da página da barbearia.</p>
       <div class="links">
-        <a href="barbearia_sem_estilizacao.html" target="_blank">Sem Estilização</a>
-        <a href="barbearia.html" target="_blank">Com Estilização</a>
+        <a href="barbearia_sem_estilizacao.html" target="_blank">Versão Sem Estilo</a>
+        <a href="barbearia.html" target="_blank">Versão Com CSS</a>
       </div>
     </div>
 
     <div class="card">
       <h2>☕ Cafeteria</h2>
-      <p>Compare a versão simples com a estilizada da cafeteria.</p>
+      <p>Compare a diferença entre as versões básica e estilizada.</p>
       <div class="links">
-        <a href="cafeteria_sem_estilizacao.html" target="_blank">Sem Estilização</a>
-        <a href="cafeteria.html" target="_blank">Com Estilização</a>
+        <a href="cafeteria_sem_estilizacao.html" target="_blank">Versão Sem Estilo</a>
+        <a href="cafeteria.html" target="_blank">Versão Com CSS</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Desenvolvido para a aula de introdução ao HTML e CSS • <strong>FEIG</strong> 💻</p>
+    <p>Desenvolvido para a aula de CSS • <strong>FEIG</strong> 💻</p>
   </footer>
 </body>
 </html>
