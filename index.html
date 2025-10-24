@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula de HTML e CSS - FEIG</title>
+  <style>
+    :root {
+      --primary: #0078ff;
+      --secondary: #00bfa5;
+      --bg: #f5f7fa;
+      --text: #333;
+      --card-bg: #fff;
+      --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 900px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .links a {
+      background: var(--primary);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .links a:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #888;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curso de HTML e CSS - Aula Prática</h1>
+    <p>Explore abaixo os exemplos criados em aula e veja a diferença entre páginas com e sem estilização.</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h2>💈 Barbearia</h2>
+      <p>Veja como o CSS transforma a aparência da barbearia.</p>
+      <div class="links">
+        <a href="barbearia_sem_estilizacao.html" target="_blank">Sem Estilização</a>
+        <a href="barbearia.html" target="_blank">Com Estilização</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>☕ Cafeteria</h2>
+      <p>Compare a versão simples com a estilizada da cafeteria.</p>
+      <div class="links">
+        <a href="cafeteria_sem_estilizacao.html" target="_blank">Sem Estilização</a>
+        <a href="cafeteria.html" target="_blank">Com Estilização</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Desenvolvido para a aula de introdução ao HTML e CSS • <strong>FEIG</strong> 💻</p>
+  </footer>
+</body>
+</html>

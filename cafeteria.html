@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café do Pôr do Sol ☕</title>
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fdf6f0;
+      color: #4b2e05;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav a {
+      color: #f5deb3;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fffacd;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      background-color: white;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #6f4e37;
+      border-bottom: 2px solid #e0c097;
+      padding-bottom: 5px;
+    }
+
+    /* Tabela */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0c097;
+      color: #4b2e05;
+    }
+
+    tr:hover {
+      background-color: #fff8dc;
+    }
+
+    /* Formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #6f4e37;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #8b5e3c;
+    }
+
+    footer {
+      background-color: #4b2e05;
+      color: #f5deb3;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Café do Pôr do Sol ☕</h1>
+    <nav>
+      <a href="#sobre">Sobre</a> |
+      <a href="#cardapio">Cardápio</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma cafeteria artesanal localizada no coração da cidade, conhecida por nossos cafés especiais e ambiente acolhedor.</p>
+    <p>Nosso objetivo é proporcionar uma experiência única com sabores e aromas que inspiram bons momentos.</p>
+  </section>
+
+  <section id="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <table>
+      <tr>
+        <th>Bebida</th>
+        <th>Tamanho</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Café Expresso</td>
+        <td>Pequeno</td>
+        <td>R$ 6,00</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>Médio</td>
+        <td>R$ 9,00</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>Grande</td>
+        <td>R$ 11,00</td>
+      </tr>
+      <tr>
+        <td>Chocolate Quente</td>
+        <td>Grande</td>
+        <td>R$ 10,00</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Café do Pôr do Sol — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
