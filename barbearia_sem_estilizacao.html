@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✂️ Barbearia Fio da Navalha</title>
+  <link rel="stylesheet" href="barbearia.css">
+</head>
+<body>l
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <h1>✂️ Barbearia Fio da Navalha</h1>
+    <nav>
+      <a href="#servicos">Serviços</a> |
+      <a href="#precos">Preços</a> |
+      <a href="#video">Vídeo</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Seção de Serviços -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>💇‍♂️ Corte de cabelo</li>
+      <li>🧔‍♂️ Barba completa</li>
+      <li>✨ Combo Corte + Barba</li>
+      <li>💆‍♂️ Tratamento capilar</li>
+      <li>🎨 Design de barba</li>
+    </ul>
+  </section>
+
+  <!-- Seção de Preços -->
+  <section id="precos">
+    <h2>Tabela de Preços</h2>
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Preço</th>
+        <th>Duração</th>
+      </tr>
+      <tr>
+        <td>Corte de Cabelo</td>
+        <td>R$ 45,00</td>
+        <td>30 min</td>
+      </tr>
+      <tr>
+        <td>Barba Completa</td>
+        <td>R$ 35,00</td>
+        <td>20 min</td>
+      </tr>
+      <tr>
+        <td>Combo Corte + Barba</td>
+        <td>R$ 70,00</td>
+        <td>45 min</td>
+      </tr>
+      <tr>
+        <td>Tratamento Capilar</td>
+        <td>R$ 25,00</td>
+        <td>15 min</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Seção de Vídeo -->
+  <section id="video">
+    <h2>Conheça Nossa Barbearia</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/HueapC-xd0o" 
+              frameborder="0" 
+              allowfullscreen
+              title="Vídeo da Barbearia">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section id="contato">
+    <h2>Agende Seu Horário</h2>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="servico">Serviço Desejado:</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione um serviço</option>
+          <option value="corte">Corte de Cabelo - R$ 45,00</option>
+          <option value="barba">Barba Completa - R$ 35,00</option>
+          <option value="combo">Combo Corte + Barba - R$ 70,00</option>
+          <option value="tratamento">Tratamento Capilar - R$ 25,00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data Preferida:</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação especial ou preferência..."></textarea>
+      </div>
+
+      <button type="submit">Agendar Horário</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Barbearia Fio da Navalha</h3>
+        <p>Especialistas em cortes modernos e barbas perfeitas</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Horário de Funcionamento</h4>
+        <p>Segunda a Sexta: 8h às 18h</p>
+        <p>Sábado: 8h às 16h</p>
+        <p>Domingo: Fechado</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>📞 (11) 99999-9999</p>
+        <p>📧 contato@fiodanavalha.com</p>
+        <p>📍 Rua das Barbas, 123 - Centro</p>
+        <p><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">💬 Agendar pelo WhatsApp</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Barbearia Fio da Navalha — Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

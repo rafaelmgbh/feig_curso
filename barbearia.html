@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✂️ Barbearia Fio da Navalha</title>
+  <link rel="stylesheet" href="barbearia.css">
+  <style>
+    /* ============================
+   BARBEARIA FIO DA NAVALHA
+   Aula de CSS — Nível Iniciante
+   ============================ */
+
+/* ----------------------------
+   RESET BÁSICO
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------
+   ESTILO GLOBAL
+---------------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Centraliza e define espaçamento geral */
+section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------
+   CABEÇALHO
+---------------------------- */
+header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Navegação */
+nav a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* ----------------------------
+   SEÇÃO DE SERVIÇOS
+---------------------------- */
+#servicos ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#servicos li {
+  background-color: #f8f8f8;
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 5px solid #b22222;
+  transition: background-color 0.3s;
+}
+
+#servicos li:hover {
+  background-color: #ffecec;
+}
+
+/* ----------------------------
+   TABELA DE PREÇOS
+---------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #b22222;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ----------------------------
+   VÍDEO
+---------------------------- */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* ----------------------------
+   FORMULÁRIO
+---------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #b22222;
+  box-shadow: 0 0 5px rgba(178, 34, 34, 0.4);
+}
+
+/* Botão */
+button {
+  background-color: #b22222;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d63333;
+}
+
+/* ----------------------------
+   RODAPÉ
+---------------------------- */
+footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+footer h3, footer h4 {
+  color: #ffcc00;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 0.8em;
+}
+
+/* ----------------------------
+   RESPONSIVIDADE (básico)
+---------------------------- */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>l
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <h1>✂️ Barbearia Fio da Navalha</h1>
+    <nav>
+      <a href="#servicos">Serviços</a> |
+      <a href="#precos">Preços</a> |
+      <a href="#video">Vídeo</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Seção de Serviços -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>💇‍♂️ Corte de cabelo</li>
+      <li>🧔‍♂️ Barba completa</li>
+      <li>✨ Combo Corte + Barba</li>
+      <li>💆‍♂️ Tratamento capilar</li>
+      <li>🎨 Design de barba</li>
+    </ul>
+  </section>
+
+  <!-- Seção de Preços -->
+  <section id="precos">
+    <h2>Tabela de Preços</h2>
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Preço</th>
+        <th>Duração</th>
+      </tr>
+      <tr>
+        <td>Corte de Cabelo</td>
+        <td>R$ 45,00</td>
+        <td>30 min</td>
+      </tr>
+      <tr>
+        <td>Barba Completa</td>
+        <td>R$ 35,00</td>
+        <td>20 min</td>
+      </tr>
+      <tr>
+        <td>Combo Corte + Barba</td>
+        <td>R$ 70,00</td>
+        <td>45 min</td>
+      </tr>
+      <tr>
+        <td>Tratamento Capilar</td>
+        <td>R$ 25,00</td>
+        <td>15 min</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Seção de Vídeo -->
+  <section id="video">
+    <h2>Conheça Nossa Barbearia</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/HueapC-xd0o" 
+              frameborder="0" 
+              allowfullscreen
+              title="Vídeo da Barbearia">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section id="contato">
+    <h2>Agende Seu Horário</h2>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="servico">Serviço Desejado:</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione um serviço</option>
+          <option value="corte">Corte de Cabelo - R$ 45,00</option>
+          <option value="barba">Barba Completa - R$ 35,00</option>
+          <option value="combo">Combo Corte + Barba - R$ 70,00</option>
+          <option value="tratamento">Tratamento Capilar - R$ 25,00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data Preferida:</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Alguma observação especial ou preferência..."></textarea>
+      </div>
+
+      <button type="submit">Agendar Horário</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Barbearia Fio da Navalha</h3>
+        <p>Especialistas em cortes modernos e barbas perfeitas</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Horário de Funcionamento</h4>
+        <p>Segunda a Sexta: 8h às 18h</p>
+        <p>Sábado: 8h às 16h</p>
+        <p>Domingo: Fechado</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>📞 (11) 99999-9999</p>
+        <p>📧 contato@fiodanavalha.com</p>
+        <p>📍 Rua das Barbas, 123 - Centro</p>
+        <p><a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-link">💬 Agendar pelo WhatsApp</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Barbearia Fio da Navalha — Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>
